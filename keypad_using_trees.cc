@@ -17,7 +17,7 @@ void keypad(string input,string output){
         for(int j=0;j<)
        keypad(input.substr(0,1),s1[]+output);
       
-}
+}sdskdjfs;dldfds
 
 int main(){
   string input;
