@@ -1,5 +1,6 @@
 #include<iostream>
 #include<string>
+#include<bits/stdc++.h>
 using namespace std;
 
 int main(){
@@ -28,4 +29,5 @@ int main(){
    string s1 = "sdjfnsdnksd";
    cout<<s1.substr(1)<<endl;
    cout<<s1.substr(0,1);
+   cout<<pow(2,3);
 }
