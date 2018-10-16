@@ -8,9 +8,11 @@ void subsequence1(string input, string output){
       cout<<output<<endl;
       return;
     }
+    //we don't add to the subset
     subsequence1(input.substr(1),output);
+    //here we add to subset
     subsequence1(input.substr(1),output + input[0]);
-
+     
 }  
 
 
