@@ -3,7 +3,27 @@
 
 using namespace std;
 
-int subset(int input[],int n, int small_output[][20]){
+int subset(int input[],int n, int output[][20]){
+    
+    int limit = pow(2,n);
+    int counter=0;
+    int j=0;
+    int i=0;
+    int temp = 0,rem;
+    while(counter < limit)
+    {
+      for(int i=0;i<n;i++)
+      rem = temp % 2;
+      temp = temp / 2;
+       if(rem == 1)
+       {
+         output[j][i] = input [i];
+         output[i][0] = counter;
+         j++;
+       }
+       counter++;
+    }
+   return limit; 
 //     k++;
 //     if(i=input.length())
 //     {
@@ -22,17 +42,17 @@ int subset(int input[],int n, int small_output[][20]){
 //     int small_output [20][20];
 //     subset(input,n,0,small_output);
 //---------------------------------------
-    int size = pow(2,n); ///Total number 
-    if(index = input.length()){
-        return result.length;
-    }
-    int * result = new int[n];
-    int i=1,j=0;
-    small_output[i][j] = input[j];
-    j++;
-    //small_output[0][j] = result[i].length;
-    small_output[0][j] = subset(input+1,n,small_output);
-    return size;
+    // int size = pow(2,n); ///Total number 
+    // if(index = input.length()){
+    //     return n;
+    // }
+    // int * result = new int[n];
+    // int i=1,j=0;
+    // small_output[i][j] = input[j];
+    // j++;
+    // //small_output[0][j] = result[i].length;
+    // small_output[0][j] = subset(input+1,n,small_output);
+    // return size;
 }
 
 int main(){
