@@ -1,3 +1,4 @@
+//https://ide.codingblocks.com/s/35664
 #include<bits/stdc++.h>
 using namespace std;
 //declaring a global board of size 11
