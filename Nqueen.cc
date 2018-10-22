@@ -1,4 +1,5 @@
 //https://ide.codingblocks.com/s/35664
+//printing is done row wise
 #include<bits/stdc++.h>
 using namespace std;
 //declaring a global board of size 11
