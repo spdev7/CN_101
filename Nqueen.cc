@@ -1,6 +1,7 @@
 //https://ide.codingblocks.com/s/35664
 //printing is done row wise
 #include<bits/stdc++.h>
+#include<iostream>
 using namespace std;
 //declaring a global board of size 11
 int board[11][11];
